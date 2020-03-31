@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="Share With Whatsapp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        tools:ignore="HardcodedText"
+        style="@style/TextAppearance.AppCompat.Title"
+        android:gravity="center_horizontal" />
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:inputType="textPersonName"
+        android:hint="Name"
+        android:importantForAutofill="no"
+        tools:ignore="HardcodedText,LabelFor" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/etCountryCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:drawableEnd="@drawable/ic_arrow_drop_down_black"
+            android:hint="Code"
+            android:focusable="false"
+            android:clickable="true"
+            android:cursorVisible="false"
+            android:focusableInTouchMode="false"
+            android:layout_weight="3"
+            android:importantForAutofill="no"
+            tools:ignore="HardcodedText,KeyboardInaccessibleWidget,LabelFor"
+            android:gravity="center_horizontal"
+            android:drawableRight="@drawable/ic_arrow_drop_down_black" />
+
+        <EditText
+            android:id="@+id/etNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="Number"
+            android:layout_weight="1"
+            android:importantForAutofill="no"
+            tools:ignore="HardcodedText,LabelFor" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btnSend"
+        android:text="Send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:text="Or"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"
+        style="@style/TextAppearance.AppCompat.Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="HardcodedText"
+        android:gravity="center_horizontal" />
+
+    <Button
+        android:id="@+id/btnWhatsapp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Open Whatsapp"
+        tools:ignore="HardcodedText" />
+
+</LinearLayout>
